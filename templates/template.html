@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Control Panel</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static',    filename='css/template.css') }}">
+    
+</head>
+  <body class="body">
+    <header>
+      <div class="container">
+        <h1 class="logo">Control Panel</h1>
+        <strong><nav>
+          <table  class="menu">
+            <tr>
+              <td><button class="button button2" onclick="document.location='{{ url_for('home') }}'">Home</button></td>
+              <td><button class="button button2" onclick="document.location='{{ url_for('lights') }}'">Lights</button></td>
+              <td><button class="button button2" onclick="document.location='{{ url_for('other') }}'">Other</button></td>
+            </tr>
+          </table>
+        </nav></strong>
+      </div>
+    </header>
+    
+{% block content %}
+{% endblock %}
+
+ </body>
+</html>

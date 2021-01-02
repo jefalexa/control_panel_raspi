@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Lights</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <h1> Lights </h1>
+    <table  class="menu">
+      <tr>
+        <td><button class="button button1" onclick="document.location='{{ url_for('light_button_1') }}'">Computer</button></td>
+        <td><button class="button button1" onclick="document.location='{{ url_for('light_button_2') }}'"> Video  </button></td>
+      </tr>
+      <tr>
+        <td><button class="button button1" onclick="document.location='{{ url_for('light_button_3') }}'">  Read  </button></td>
+        <td><button class="button button1" onclick="document.location='{{ url_for('light_button_4') }}'">Energize</button></td>
+      </tr>
+    </table>
+      
+    {% endblock %}
+  </body>
+</html>
