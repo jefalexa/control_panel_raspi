@@ -10,12 +10,12 @@ body {
   .button {
     border: none;
     color: white;
-    padding: 32px 64px;
+    padding: 32px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 24px;
-    margin: 16px 8px;
+    margin: 4px 4px;
     transition-duration: 0.4s;
     cursor: pointer;
   }
@@ -23,8 +23,9 @@ body {
   .button1 {
     background-color: #4c53af;
     color: white;
-    border: 2px solid #4c53af;
+    border: 1px solid #4c53af;
     width: 250px;
+    height: 100px;
   }
   
   .button1:hover {
